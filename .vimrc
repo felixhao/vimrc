@@ -86,18 +86,18 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 let NERDTreeMinimalUI=1
 let NERDTreeShowLineNumbers=1
 let NERDTreeWinSize=38
-map <F10> :NERDTreeToggle<CR>
+map <F11> :NERDTreeToggle<CR>
 " nerdtree end
 
 " leaderf start
-let g:Lf_ShortcutF = '<C-P>'
-let g:Lf_ShortcutB = '<D-B>'
+let g:Lf_ShortcutF = '<F10>'
+let g:Lf_ShortcutB = '<F9>'
 let g:Lf_WindowHeight = 0.30
 let g:Lf_HideHelp = 1
 let g:Lf_ShowRelativePath = 0
 let g:Lf_CacheDirectory = expand('~/.vim/cache')
-noremap <C-M> <Esc>:LeaderfMru<cr>
-noremap <C-F> <Esc>:LeaderfFunction<CR>
-noremap <C-T> <Esc>:LeaderfBufTag<CR>
+noremap <F8> <Esc>:LeaderfMru<CR>
+noremap <F7> <Esc>:LeaderfFunction<CR>
+noremap <F6> <Esc>:LeaderfBufTag<CR>
 " leaderf end
 
